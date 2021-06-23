@@ -1,5 +1,5 @@
 # NEED-FOR-JS
-Учебный проект GloAcademy 'Гоночки на JavaScript'
+Учебный проект GloAcademy 'Racing game with JavaScript'
 
 ## Используются технологии:
 - JavaScript
