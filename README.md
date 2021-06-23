@@ -1,7 +1,7 @@
 # NEED-FOR-JS
 Учебный проект GloAcademy 'Гоночки на JavaScript'
 
-# Используются технологии:
+## Используются технологии:
 - JavaScript
 - HTML
 - CSS
