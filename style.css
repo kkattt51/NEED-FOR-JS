@@ -1,3 +1,7 @@
+:root {
+  --height-elem: 100px;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -45,10 +50,59 @@ table {
   display: none;
 }
 
+.game {
+  height: 100%;
+  display: flex;
+  padding-top: 100px;
+}
+
+.start {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(50px - 2rem);
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 3px 3px 5px 1px #ccc;
+  font-style: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font: inherit;
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  color: #ddd;
+}
+
+.score {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: -3px -3px 5px 1px #ccc;
+  height: calc(50px - 2rem);
+  padding: 1rem;
+}
+
+.btn:not(:last-child) {
+  margin-right: 15px;
+}
+
 .car, .enemy {
-  width: 50px;
-  height: 100px;
-  background: transparent url('./image/player.png') center / cover no-repeat;
+  width: calc(var(--height-elem) / 2);
+  height: var(--height-elem);
+  background: transparent url('./image/player.png') center / contain no-repeat;
   position: absolute;
 }
 
@@ -64,7 +118,7 @@ table {
 .line {
   position: absolute;
   width: 10px;
-  height: 50px;
+  height: calc(var(--height-elem) / 2);
   background: #fff;
   left: 145px;
 }
