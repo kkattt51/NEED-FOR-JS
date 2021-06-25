@@ -125,9 +125,9 @@ function playGame() {
 
   if (setting.start){
     setting.score += setting.speed;
-    score.innerHTML = 'SCORE<br>' + setting.score;
+    score.innerHTML = 'SCORE: ' + setting.score;
 
-    setting.speed = startSpeed + (Math.floor(setting.score / 5000));
+    setting.speed = startSpeed + Math.floor(setting.score / 5000);
 
     moveRoad();
     moveEnemy();

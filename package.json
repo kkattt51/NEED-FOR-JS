@@ -1,0 +1,25 @@
+{
+  "name": "nfjs",
+  "version": "1.0.0",
+  "description": "Учебный проект GloAcademy 'Racing game with JavaScript'",
+  "main": "script.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkattt51/NEED-FOR-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkattt51/NEED-FOR-JS/issues"
+  },
+  "homepage": "https://github.com/kkattt51/NEED-FOR-JS#readme",
+  "devDependencies": {
+    "electron": "^13.1.4",
+    "electron-packager": "^15.2.0",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}
